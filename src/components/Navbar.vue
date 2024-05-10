@@ -1,11 +1,34 @@
 
 /* eslint-disable */
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" style="font-size: 20px; font-weight: 700" href="/"> </a>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00001A;">
+    
+    <!-- <a class="navbar-brand" style="font-size: 20px; font-weight: 700" href="/"> </a>
     <button class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">
+        <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Beemo
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">HOME PAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">EXPLORE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">HELP CENTER</a>
+        </li>
+      </ul>
+    </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <b-navbar-nav class="navbar-nav ms-auto">
@@ -92,7 +115,7 @@
 
 </template>
 <script>
-// import { computed } from 'vue';
+// import { computed } from 'vue'
 import { useStore } from 'vuex';
 import alert from 'sweetalert2';
 import ProfileImage from '@/components/chatComponents/ProfileImage.vue';
@@ -216,5 +239,26 @@ export default {
 }
 </script>
 <style>
+.nav-item {
+    margin: 0 10px; /* Space between the items */
+}
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Center the links within the container */
+    align-items: center;
+    width: 100%; /* Take full width of the navbar */
+}
+.nav-item a {
+    text-decoration: none; /* Removes underline from links */
+    font-family: 'Roboto', sans-serif; /* Uses Roboto font */
+    padding: 10px 20px; /* Padding for better touch area and appearance */
+    display: inline-block; /* Ensures padding and background color are applied correctly */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+.nav-item a:hover {
+  background-color: #212325; /* Example hover background color: a shade of blue */
+  color: #ffffff; /* Text color on hover, can be changed if needed */
+  text-decoration: none; /* Continues to remove underline */
+}
 
 </style>
