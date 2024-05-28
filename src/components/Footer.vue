@@ -4,7 +4,7 @@
         <div class="d-flex flex-column flex-md-row flex-lg-row justify-content-around align-items-center">
             <ul class="list-inline d-flex align-items-center p-0 m-0">
                 <li class="list-inline-item px-1">
-                    <a href="https://www.facebook.com/boaizz/"><font-awesome-icon icon="fab fa-facebook text-secondary" class="h3"/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100011571906529"><font-awesome-icon icon="fab fa-facebook text-secondary" class="h3"/></a>
                 </li>
             </ul>
             <div class="d-flex flex-column">

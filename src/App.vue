@@ -1,25 +1,16 @@
 <template>
   <header>
-    <navBar/> 
+    <navBar /> 
   </header>
-  <div>
-  <sideBar/>
-  </div>
-  <div :style="{ 'margin-left': sidebarWidth }"> 
+  <div> 
     <router-view />
   </div> 
-  <!-- <div>
-  <router-view/>
-  </div> -->
   <footer>
-    <footerComponent/>
+    <footerComponent />
   </footer>
-  
 </template>
 
 <script>
-import sideBar from '@/components/sideBar/SideBar.vue'
-import { sidebarWidth } from '@/components/sideBar/state'
 import navBar from '@/components/Navbar.vue' 
 import footerComponent from '@/components/Footer.vue'
 
@@ -27,14 +18,14 @@ export default {
   name: 'App',
   components: {
     navBar,
-    footerComponent,
-    sideBar
+    footerComponent
   },
   setup() {
-    return { sidebarWidth }
+    return {}
   }
 }
 </script>
+
 
 
 <style>
