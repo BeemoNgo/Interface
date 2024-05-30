@@ -1,5 +1,5 @@
 <template>
-    <h1>HAVE A QUESTION?</h1>
+    <h1 class="text-white">HAVE A QUESTION?</h1>
     <Chat/> <!--Use the chat components-->
 </template>
   

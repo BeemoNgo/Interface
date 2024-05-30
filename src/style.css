@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1f9d55;
+    background-color: #00001A;
     color: #fff;
     border: none;
     padding: 8px 12px;
@@ -58,7 +58,7 @@
   }
   
   .bg-green-800 {
-    background-color: #1f9d55;
+    background-color: #00001A;
   }
   
   .bg-gray-700 {
@@ -67,7 +67,7 @@
   
   
   .icon-send:hover {
-    color: #1f9d55;
+    color: #00001A;
   }
   
   /* Message.vue */
@@ -103,11 +103,10 @@
   }
   
   .send {
-    background-color: #1f9d55;
+    background-color: #00001A;
   }
   
   .receive {
     background-color: #333;
   }
   
- 

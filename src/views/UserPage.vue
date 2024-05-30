@@ -39,7 +39,7 @@
                                 <td></td>
                                 <td></td>
                                 <td class="bold">Total</td>
-                                <td class="bold">$ {{ getTotal()  }} </td>
+                                <td class="bold">ETH {{ getTotal()  }} </td>
                                 <td></td>
                             </tr>
                     </table>

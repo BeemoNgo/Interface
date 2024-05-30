@@ -22,6 +22,9 @@ export default {
   },
   setup() {
     return {}
+  },
+  mounted() {
+    document.body.style.backgroundColor = "#00001A";
   }
 }
 </script>
@@ -39,6 +42,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
 }
 
 nav {

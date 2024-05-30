@@ -4,13 +4,13 @@ import { getAuth } from 'firebase/auth';
 
 //firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBzLqV7tVs8IOOelRBWOC-7_0j0aFfBOSY",
-    authDomain: "vue-social-app-bdd5d.firebaseapp.com",
-    projectId: "vue-social-app-bdd5d",
-    storageBucket: "vue-social-app-bdd5d.appspot.com",
-    messagingSenderId: "290322702669",
-    appId: "1:290322702669:web:661a65b977ce7d087c5704",
-    measurementId: "G-26Q8VETMDN"
+    apiKey: "AIzaSyALrjTa9oI6Le_60hTYL6vCjmXnljd1_G4",
+    authDomain: "interface-b736b.firebaseapp.com",
+    projectId: "interface-b736b",
+    storageBucket: "interface-b736b.appspot.com",
+    messagingSenderId: "560621672268",
+    appId: "1:560621672268:web:4d9b8435582c433999a1e9",
+    measurementId: "G-GG7HT9PDEM"
 }
 
 //init firebase app

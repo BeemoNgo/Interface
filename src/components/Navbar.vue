@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00001A;">
    <div class="container-fluid">
      <a class="navbar-brand text-white" href="#">
-       <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+       <img src="logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
        Beemo
      </a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,29 +20,23 @@
            <RouterLink class="nav-link text-white" to="/about">ABOUT</RouterLink>
          </li>
          <li class="nav-item">
-           <a class="nav-link text-white" href="#">HELP CENTER</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link text-white" href="#" @click="isLoginCheck()">ACCOUNT</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link text-white" href="#" @click="isLoginCheck()">Chat</a>
+           <RouterLink class="nav-link text-white" to="/chat" @click="isLoginCheck()">HELP CENTER</RouterLink>
          </li>
        </ul>
        <ul class="navbar-nav ms-auto">
          <li class="nav-item px-2 pt-2">
            <span class="badge rounded-pill bg-warning">{{ store.state.basketCount }}</span>
-           <font-awesome-icon icon="fa-solid fa-cart-shopping" @click="openModalCart()" style="color: #2caf3b;" />
+           <font-awesome-icon icon="fa-solid fa-cart-shopping" @click="openModalCart()" style="color: #fff;" />
          </li>
          <li class="nav-item px-2 pt-2">
-           <font-awesome-icon icon="fa-solid fa-heart" style="color: #2caf3b;" @click="openModalFavorites" />
+           <font-awesome-icon icon="fa-solid fa-heart" style="color: #fff;" @click="openModalFavorites" />
          </li>
          <li class="nav-item px-2 pt-2">
            <div v-if="isLogin" class="login px-2 pt-2">
              <RouterLink to="/user"><ProfileImage :src="user.photoURL" /></RouterLink>
            </div>
            <div v-else class="login px-2 pt-2">
-             <font-awesome-icon icon="fa-solid fa-right-to-bracket" style="color: #2caf3b;" @click="signIn" />
+             <font-awesome-icon icon="fa-solid fa-right-to-bracket" style="color: #fff;" @click="signIn" />
            </div>
          </li>
        </ul>
@@ -69,11 +63,11 @@
  </b-modal>
 
    <b-modal id="bayModal" v-model="modalShow" size="xl" hide-header hide-footer no-close-on-backdrop no-close-on-esc>
-     <div class="alert alert-success" role="alert">
+     <div class="alert text-white" style="background-color: #00001A;" role="alert">
        YOUR CART
-       <div class="table-responsive">
+       <div class="table-responsive ">
          <table class="table table-striped table-hover">
-           <tr>
+           <tr class="text-white">
              <th>ID</th>
              <th>Name</th>
              <th>Image</th>
@@ -82,28 +76,28 @@
              <th>Total Price</th>
              <th>Remove</th>
            </tr>
-           <tr v-for="item, i in basketItems" :key="i">                                
+           <tr v-for="item, i in basketItems" :key="i" class="text-white">                                
              <td>{{i + 1}}</td>
              <td>{{item.title}}</td>
              <td><img :src="item.images[0]" class="" width="80" height="90" /></td>
              <td>{{ item.price }}</td>
              <td>{{ item.qty }}</td>
-             <td>${{ parseFloat(item.price * item.qty).toFixed(2) }}</td>
+             <td>ETH {{ parseFloat(item.price * item.qty).toFixed(2) }}</td>
              <td><a href="#" @click="removeCartItem(item.id)" class="text-danger px-3 py-1"><font-awesome-icon icon="fa-solid fa-remove" /></a></td>
            </tr>                            
-           <tr>
+           <tr class="text-white">
              <td></td>
              <td></td>
              <td></td>
              <td></td>
              <td><strong>{{ store.state.basketCount }}</strong></td>
-             <td><strong>${{ getTotal() }}</strong> </td>
+             <td><strong>ETH {{ getTotal() }}</strong> </td>
              <td></td>
            </tr>
          </table>
          <div class="my-4">
-           <button @click.prevent="closeModalCart()" class="btn btn-danger float-start">Close</button>
-           <button class="btn btn-success float-end">Proceed To Payment</button>
+           <button @click.prevent="closeModalCart()" class="btn btn-outline-danger float-start">Close</button>
+           <button class="btn btn-outline-success float-end">Proceed To Payment</button>
          </div>
        </div>
      </div>
@@ -228,25 +222,52 @@ export default {
 </script>
 
 <style>
-.nav-item {
- margin: 0 10px;
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Ensures items are spread out */
+  align-items: center;
+  background-color: #00001A;
 }
+
 .navbar-nav {
- display: flex;
- justify-content: center;
- align-items: center;
- width: 100%;
+  display: flex;
+  align-items: center;
 }
+
+.navbar-nav.me-auto {
+  flex: 1;
+  justify-content: flex-start; /* Aligns items to the left */
+}
+
+.navbar-nav.ms-auto {
+  flex: 0; /* Do not allow this to grow */
+  justify-content: flex-end; /* Aligns items to the right */
+}
+
+.nav-item {
+  margin: 0 10px; /* Space between items */
+}
+
 .nav-item a {
- text-decoration: none;
- font-family: 'Roboto', sans-serif;
- padding: 10px 20px;
- display: inline-block;
- transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: white; /* Ensures text is white */
+  padding: 10px 20px;
+  display: block; /* Better block handling for padding */
 }
+
 .nav-item a:hover {
- background-color: #212325;
- color: #ffffff;
- text-decoration: none;
+  background-color: #212325; /* Darker background on hover */
+  color: #ffffff;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and text */
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
 }
 </style>
