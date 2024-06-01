@@ -1,13 +1,15 @@
 <template>
-  <header>
-    <navBar /> 
-  </header>
-  <div> 
-    <router-view />
-  </div> 
-  <footer>
-    <footerComponent />
-  </footer>
+  <div id="app">
+    <header>
+      <navBar /> 
+    </header>
+    <main>
+      <router-view />
+    </main> 
+    <footer>
+      <footerComponent />
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -29,23 +31,17 @@ export default {
 }
 </script>
 
-
-
-<style>
-</style>
-
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex: 1;
 }

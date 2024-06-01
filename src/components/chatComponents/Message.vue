@@ -1,7 +1,7 @@
 <template>
     <div class="message">
       <div class="row">
-        <span v-if="!sender" class="col-5">{{ name }}</span>
+        <span v-if="!sender" class="col-5 text-white">{{ name }}</span>
       </div>
       <div class="flex" :class="sender ? 'flex-row-reverse' : ''">  
         <ProfileImage class="mt-2" :src="photoUrl" />

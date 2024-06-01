@@ -11,7 +11,7 @@
         <p>Marketplace For Monster Character Collections Non Fungible Token NFTs</p>
         <div class="buttons">
           <RouterLink to="/explore" class="btn explore">Explore</RouterLink>
-          <RouterLink to="/user" class="btn create">Connect your wallet</RouterLink>
+          <button @click="signIn" class="btn create">Connect your wallet</button>
         </div>
       </div>
       <div class="image-container">
@@ -41,8 +41,14 @@
 </template>
 
 <script>
+import { useAuth } from '@/firestore';  // Ensure this path is correct
+
 export default {
   name: 'HomePage',
+  setup() {
+    const { signIn } = useAuth();
+    return { signIn };
+  }
 };
 </script>
 

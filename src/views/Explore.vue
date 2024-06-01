@@ -9,19 +9,20 @@
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 mt-2">
-        <div class="d-flex justify-content-end">
-          <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
             Sort By: {{ aCategory === '' ? 'All' : aCategory }}
           </button>
-          <ul class="dropdown-menu">
-            <a class="dropdown-item active" href="#" @click="updateCategory">All</a>
-            <a v-for="(category, index) in categories" :key="index" class="dropdown-item" href="#" @click="updateCategory">{{ category }}</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#" @click="updateCategory($event)">All</a></li>
+            <li v-for="category in categories" :key="category">
+              <a class="dropdown-item" href="#" @click="updateCategory($event)">{{ category }}</a>
+            </li>
           </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
   <div class="row justify-content-center" style="background-color: #00001A;">
     <div class="card_items col-12 col-sm-6 col-md-4 col-lg-3 mb-4 px-2" v-for="(item, index) in slicedItems" :key="index">
       <div class="card" style="background-color: transparent;">
@@ -173,8 +174,8 @@ export default {
         timer: 3000
       });
     },
-    updateCategory(e) {
-      this.aCategory = e.target.text === 'All' ? '' : e.target.text;
+    updateCategory(e){
+        this.aCategory = e.target.text == 'All' ? '' : e.target.text
     },
     addItem(id) {
       this.addItemToBasket(id);
@@ -273,10 +274,8 @@ export default {
   },
   computed: {
     filteredData() {
-      return this.datas.filter(item =>
-        item.title.toLowerCase().match(this.searchString.toLowerCase()) &&
-        item.category.toLowerCase().match(this.aCategory)
-      );
+        return this.datas.filter(item => item.title.toLowerCase().match(this.searchString.toLowerCase()) && item.category.toLowerCase().match(this.aCategory)
+        )
     },
     slicedItems() {
       const startIndex = (this.page - 1) * this.perPage;
