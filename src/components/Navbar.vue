@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <!-- Standard Navbar -->
-  <nav v-if="!isMobileView" class="navbar navbar-expand-lg navbar-light" style="background-color: #00001A;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00001A;">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">
+      <a class="navbar-brand text-white" href="#" @click="toggleNavbar">
         <img src="logo.png" alt="Beemo Logo" width="30" height="30" class="d-inline-block align-text-top">
         Beemo
       </a>
@@ -45,30 +43,6 @@
       </div>
     </div>
   </nav>
-  <!-- Sidebar for mobile view -->
-  <div v-if="isMobileView" class="sidebar">
-      <div class="sidebar-content">
-        <a class="navbar-brand text-white" href="#">
-          <img src="logo.png" alt="Beemo Logo" width="30" height="30" class="d-inline-block align-text-top">
-          Beemo
-        </a>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <RouterLink class="nav-link active text-white" to="/">HOME PAGE</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link text-white" to="/explore">EXPLORE</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link text-white" to="/about">ABOUT</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link text-white" to="/chat" @click="isLoginCheck()">HELP CENTER</RouterLink>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -112,7 +86,13 @@ export default {
       }
     };
 
-    return { user, isLogin, signOut, signIn: AlertSignIn, store, isLoginCheck };
+    // Toggle navbar function
+    const toggleNavbar = () => {
+      const navbar = document.getElementById('navbarNav');
+      navbar.classList.toggle('show');
+    };
+
+    return { user, isLogin, signOut, signIn: AlertSignIn, store, isLoginCheck, toggleNavbar };
   },
   data() {
     return {
@@ -192,7 +172,7 @@ export default {
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Ensures separation between left and right elements */
   align-items: center;
   background-color: #00001A;
 }
@@ -203,12 +183,11 @@ export default {
 }
 
 .navbar-nav.me-auto {
-  flex: 1;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Aligns navigation links to the left */
 }
 
 .navbar-nav.ms-auto {
-  justify-content: flex-end;
+  justify-content: flex-end; /* Aligns icons to the right */
 }
 
 .nav-item {
@@ -257,13 +236,14 @@ export default {
   transform: scale(1.05);
   transition: 0.3s;
 }
-
-.wallet-button i {
-  display: block;
+@media (max-width: 992px) {
+  .navbar-nav {
+    justify-content: flex-start !important; /* Ensure all nav items align to the left */
+    width: 100%; /* Ensure the navbar takes full width */
+  }
+  .navbar-collapse {
+    flex-grow: 1;
+    justify-content: flex-start !important;
+  }
 }
-
-.table-responsive {
-  overflow-x: auto;
-}
-
 </style>
