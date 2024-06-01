@@ -5,10 +5,10 @@
         <img src="logo.png" alt="Beemo Logo" width="30" height="30" class="d-inline-block align-text-top">
         Beemo
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" @click="toggleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div :class="{'collapse navbar-collapse': true, 'show': isNavbarCollapsed}" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <RouterLink class="nav-link active text-white" aria-current="page" to="/">HOME PAGE</RouterLink>
@@ -46,6 +46,7 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import { useStore } from 'vuex';
 import alert from 'sweetalert2';
 import ProfileImage from '@/components/chatComponents/ProfileImage.vue';
@@ -58,6 +59,7 @@ export default {
   setup() {
     const store = useStore();
     const { user, isLogin, signOut, signIn } = useAuth();
+    const isNavbarCollapsed = ref(false);
 
     // Trigger the sweet alert when user successfully logs in
     const AlertSignIn = () => {
@@ -88,11 +90,10 @@ export default {
 
     // Toggle navbar function
     const toggleNavbar = () => {
-      const navbar = document.getElementById('navbarNav');
-      navbar.classList.toggle('show');
+      isNavbarCollapsed.value = !isNavbarCollapsed.value;
     };
 
-    return { user, isLogin, signOut, signIn: AlertSignIn, store, isLoginCheck, toggleNavbar };
+    return { user, isLogin, signOut, signIn: AlertSignIn, store, isLoginCheck, toggleNavbar, isNavbarCollapsed };
   },
   data() {
     return {
