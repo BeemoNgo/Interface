@@ -26,8 +26,8 @@
   <div class="row justify-content-center" style="background-color: #00001A;">
     <div class="card_items col-12 col-sm-6 col-md-4 col-lg-3 mb-4 px-2" v-for="(item, index) in slicedItems" :key="index">
       <div class="card" style="background-color: transparent;">
-        <div class="badge position-absolute fav">
-          <font-awesome-icon :icon="item.isFavorite ? 'fa-regular fa-heart' : 'fa-solid fa-heart-circle-plus'" :class="['badge', 'bg-transparent', {'text-danger': item.isFavorite}]" @click="toggleFavorite(item)" />
+        <div class="badge bg-info position-absolute fav" style="">
+          <font-awesome-icon :icon="item.isFavorite ? 'fa-solid fa-heart' : 'fa-solid fa-heart-circle-plus'" :class="['badge', 'bg-info', {'text-danger': item.isFavorite}]" @click="toggleFavorite(item)"   />
         </div>
         <div v-if="item.stock > 0" class="badge bg-success text-white position-absolute available">Available</div>
         <div v-if="item.stock <= 0" class="badge bg-danger text-white position-absolute out">Sold</div>
@@ -40,7 +40,7 @@
           <div class="row justify-content-around">
             <div class="col-auto">
               <button type="button" class="bg-transparent hover:bg-blue-500 text-white font-semibold hover:text-black py-2 px-4 border border-blue-500 hover:border-transparent rounded-full">
-                Place a bid 
+                Place a bid
               </button>
               <button v-if="item.stock > 0" type="button" class="btn" @click="addItem(item.id)">
                 Add<font-awesome-icon icon="fa-solid fa-cart-plus" />
@@ -355,7 +355,7 @@ export default {
   left: 5px;
 }
 .btn {
-  
+
   background-color: transparent;
   border: 2px solid #7a25f8;
   color: white;
