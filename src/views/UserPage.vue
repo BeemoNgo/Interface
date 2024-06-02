@@ -8,14 +8,14 @@
           <ProfileImage :src="user.data.displayPhoto" class="img-fluid" />
           <div class="card-header">Welcome, {{user.data.displayName}}</div>
           <div class="card-body">
-            <div class="alert alert-success" role="alert">
+            <div class="alert text-white" role="alert" style="background-color: #00001A;">
             SHOPPING CART
             <div class="my-4">
-                  <button  @click.prevent="signOut" class="btn btn-success">Sign Out </button>
+                  <button  @click.prevent="signOut" class="btn purple text-white">Sign Out </button>
             </div>
             <div class="table-responsive">
                     <table class="table table-striped table-hover">
-                            <tr>
+                            <tr class="text-white">
                                 <th>ID</th>
                                 <th>Name</th>
                                 <th>Image</th>
@@ -24,7 +24,7 @@
                                 <th>Total Price</th>
                                 <th></th>
                             </tr>
-                            <tr v-for="item, i in basketItems" :key="i">                                
+                            <tr v-for="item, i in basketItems" :key="i" class="text-white">
                                 <td>{{i + 1}}</td>
                                 <td>{{item.title}}</td>
                                 <td><img :src="item.images[0]" class="" width="80" height="90" /></td>
@@ -32,8 +32,8 @@
                                 <td>{{ item.qty }}</td>
                                 <td>{{ parseFloat(item.price * item.qty).toFixed(2) }}</td>
                                 <td><a href="#" @click="removeCartItem(item.id)" class="text-danger px-3 py-1"><font-awesome-icon icon="fa-solid fa-remove " /></a></td>
-                            </tr>                            
-                            <tr>
+                            </tr>
+                            <tr class="text-white bold">
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -46,10 +46,10 @@
                     </div>
              </div>
           </div>
-             
+
           </div>
             <div v-else class="alert alert-danger" role="alert">
-              You are not logged in! 
+              You are not logged in!
             </div>
         </div>
       </div>
@@ -100,34 +100,53 @@ export default {
  },
  data() {
     return {
-      basketItems: [],   
-     
+      basketItems: [],
+
     };
   },
  methods: {
         //load the cart item from local storage
         loadCartItem(){
-            this.basketItems = sessionStorage.basketItems != undefined? JSON.parse(sessionStorage.basketItems): []           
+            this.basketItems = sessionStorage.basketItems != undefined? JSON.parse(sessionStorage.basketItems): []
         },
         //function to remove item from cart
-        removeCartItem(id){            
-            this.basketItems = this.basketItems.filter(function(d) { return d.id != id; })            
+        removeCartItem(id){
+            this.basketItems = this.basketItems.filter(function(d) { return d.id != id; })
             sessionStorage.setItem('basketItems', JSON.stringify(this.basketItems));
             this.$store.commit('updateBasketCount',-1)
         },
 
         //calculate the total price of the cart
-        getTotal(){            
+        getTotal(){
             let total = 0
-            for (const item of this.basketItems) {                
-                total += item.price * item.qty               
+            for (const item of this.basketItems) {
+                total += item.price * item.qty
             }
             return  parseFloat(total).toFixed(2)
-        },                
+        },
     },
     mounted() {
-        this.loadCartItem()                     
+        this.loadCartItem()
     },
-  
+
 };
 </script>
+<style>
+.purple {
+  flex: 1 1 auto; /* Allow buttons to grow and shrink but respect content */
+  margin: 5px; /* Add margin around buttons */
+  background-color: transparent;
+  border: 2px solid #7a25f8;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem; /* Adjusted font size */
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.purple:hover {
+  background-color: #7a25f8;
+}
+</style>

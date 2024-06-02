@@ -9,7 +9,7 @@
             </ul>
             <div class="d-flex flex-column">
                 <h5 class="h6 text-center text-warning bold">Thao Ngan Ngo</h5>
-                <h5 class="h6 text-center text-white">Custom Project - COS30043</h5>                
+                <h5 class="h6 text-center text-white">Custom Project - COS30043</h5>
             </div>
             <div class="d-flex flex-column">
                 <h5 class="w-100 h6 text-white text-center bold">Developed by : Thao Ngan Ngo <i class="fas fa-envelope"></i></h5>
@@ -23,13 +23,14 @@ export default {
 }
 </script>
 <style>
-  footer {
-    margin-top: auto;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
+  .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* or any color */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
 </style>
