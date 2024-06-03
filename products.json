@@ -1,0 +1,562 @@
+ [{
+         "id": 1,
+         "title": "Ivysaur",
+         "description": "Ivysaur is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 549.99,
+         "discountPercentage": 10,
+         "rating": 4.37,
+         "stock": 2,
+         "brand": "Apple",
+         "category": "leaf",
+         "mainImage": "https://cdn.tgdd.vn/Products/Images/42/114113/iphone-8-64gb-hh-600x600.jpg",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/751/830/large/pit-baldriz-chibi-venusaur-02.jpg?1583416100"
+         ]
+     },
+     {
+         "id": 2,
+         "title": "Charizard",
+         "description": "Charizard is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 899.99,
+         "discountPercentage": 10,
+         "rating": 4.44,
+         "stock": 34,
+         "brand": "Apple",
+         "category": "dragon",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/024/751/761/large/pit-baldriz-chibi-charizard-05.jpg?1583415889"
+         ]
+     },
+     {
+         "id": 3,
+         "title": "Wartortle",
+         "description": "Wartortle is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 924.99,
+         "discountPercentage": 15,
+         "rating": 4.09,
+         "stock": 36,
+         "brand": "Samsung",
+         "category": "water",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/751/702/large/pit-baldriz-chibi-wartortle-02.jpg?1583415730"
+         ]
+     },
+     {
+         "id": 4,
+         "title": "Butterfree",
+         "description": "Butterfree is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 169.99,
+         "discountPercentage": 20,
+         "rating": 4.3,
+         "stock": 0,
+         "brand": "Nike",
+         "category": "flying",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/751/576/large/pit-baldriz-pitbaldriz-butterfree-pokemon.jpg?1583415352"
+         ]
+     },
+     {
+         "id": 5,
+         "title": "Beedrill",
+         "description": "Beedrill is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 1249.99,
+         "discountPercentage": 10,
+         "rating": 4.09,
+         "stock": 32,
+         "brand": "Apple",
+         "category": "flying",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/024/751/465/large/pit-baldriz-chibi-beedrill-01.jpg?1583415124"
+         ]
+     },
+     {
+         "id": 6,
+         "title": "Arbok",
+         "description": "Arbok is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 1749.99,
+         "discountPercentage": 25,
+         "rating": 4.57,
+         "stock": 83,
+         "brand": "Apple",
+         "category": "dark",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/750/582/large/pit-baldriz-arbok-02.jpg?1583412814"
+         ]
+     },
+     {
+         "id": 7,
+         "title": "Alolan Sandslash",
+         "description": "Alolan Sandslash is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 999.99,
+         "discountPercentage": 5,
+         "rating": 4.25,
+         "stock": 50,
+         "brand": "Acer",
+         "category": "ice",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/750/410/large/pit-baldriz-sandslash-alola.jpg?1583412261"
+         ]
+     },
+     {
+         "id": 8,
+         "title": "Pichu",
+         "description": "Pichu is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 1499.99,
+         "discountPercentage": 10.23,
+         "rating": 3.6,
+         "stock": 0,
+         "brand": "HP",
+         "category": "thunder",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/750/552/large/pit-baldriz-chibi-pichu-02.jpg?1583412701"
+         ]
+     },
+     {
+         "id": 9,
+         "title": "Clafable",
+         "description": "Clafable is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 1349.99,
+         "discountPercentage": 11.83,
+         "rating": 4.54,
+         "stock": 96,
+         "brand": "Microsoft Surface",
+         "category": "flying",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/024/749/978/large/pit-baldriz-clefable-01.jpg?1583410949"
+         ]
+     },
+     {
+         "id": 10,
+         "title": "Ninetales",
+         "description": "Ninetales is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 3749.99,
+         "discountPercentage": 6.18,
+         "rating": 4.43,
+         "stock": 89,
+         "brand": "Apple",
+         "category": "legend",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/023/941/370/large/pit-baldriz-ninetailes-03.jpg?1580826369"
+         ]
+     },
+     {
+         "id": 11,
+         "title": "Wigglytuff",
+         "description": "Wigglytuff is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 1299.99,
+         "discountPercentage": 8.4,
+         "rating": 3.87,
+         "stock": 65,
+         "brand": "Dell",
+         "category": "fire",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/023/941/116/large/pit-baldriz-chibi-wigglytuff-01.jpg?1580825789"
+         ]
+     },
+     {
+         "id": 12,
+         "title": "Crobat",
+         "description": "Crobat is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 2799.99,
+         "discountPercentage": 15.66,
+         "rating": 4,
+         "stock": 52,
+         "brand": "ASUS",
+         "category": "flying",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/023/940/481/large/pit-baldriz-chibi-crobat-03.jpg?1580824440"
+         ]
+     },
+     {
+         "id": 13,
+         "title": "Vileplume",
+         "description": "Vileplume is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 169.99,
+         "discountPercentage": 8.14,
+         "rating": 4.59,
+         "stock": 61,
+         "brand": "Apple",
+         "category": "leaf",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/023/940/317/large/pit-baldriz-chibi-vileplume-01.jpg?1580824032"
+         ]
+     },
+     {
+         "id": 14,
+         "title": "Dugtrio",
+         "description": "Dugtrio is part of a personal project started in August 2016 and finished in January 2019",
+         "price": 219.99,
+         "discountPercentage": 15.6,
+         "rating": 4.21,
+         "stock": 114,
+         "brand": "Apple",
+         "category": "earth",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/023/938/034/large/pit-baldriz-dugtrio-01.jpg?1580818185"
+         ]
+     },
+     {
+         "id": 15,
+         "title": "Meowth",
+         "description": "Meowth is part of a personal project started in August 2016 and finished in January 2019",
+         "price": 289.99,
+         "discountPercentage": 10.99,
+         "rating": 4.89,
+         "stock": 105,
+         "brand": "Apple",
+         "category": "thunder",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/023/405/977/large/pit-baldriz-meowth-01.jpg?1579099117"
+         ]
+     },
+     {
+         "id": 16,
+         "title": "Arcanine",
+         "description": "Arcanine is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 329.99,
+         "discountPercentage": 13.31,
+         "rating": 4.83,
+         "stock": 0,
+         "brand": "JBL",
+         "category": "fire",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/023/405/488/large/pit-baldriz-arcanine.jpg?1579097694"
+         ]
+     },
+     {
+         "id": 17,
+         "title": "Kadabra",
+         "description": "Kadabra is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 65.99,
+         "discountPercentage": 4.09,
+         "rating": 4.52,
+         "stock": 78,
+         "brand": "JBL",
+         "category": "earth",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/022/165/858/large/pit-baldriz-chibi-kadabra-02.jpg?1574350665"
+         ]
+     },
+     {
+         "id": 18,
+         "title": "Bellsprout",
+         "description": "Bellsprout is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 849.99,
+         "discountPercentage": 13.1,
+         "rating": 4.56,
+         "stock": 88,
+         "brand": "Apple",
+         "category": "leaf",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/022/162/627/large/pit-baldriz-chibi-bellsprout-01.jpg?1574340258"
+         ]
+     },
+     {
+         "id": 19,
+         "title": "Geodude",
+         "description": "Geodude is part of a personal project started in August 2016 and finished in January 2019",
+         "price": 1.99,
+         "discountPercentage": 10.68,
+         "rating": 1.23,
+         "stock": 0,
+         "brand": "Apple",
+         "category": "earth",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/019/663/369/large/pit-baldriz-chibi-geodude-01.jpg?1564494173"
+         ]
+     },
+     {
+         "id": 20,
+         "title": "Rapidash",
+         "description": "Rapidash is part of a personal project started in August 2016 and finished in January 2020",
+         "price": 109.99,
+         "discountPercentage": 16.99,
+         "rating": 4.06,
+         "stock": 140,
+         "brand": "mouse",
+         "category": "fire",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/019/663/114/large/pit-baldriz-rapidash-01.jpg?1564493562"
+         ]
+     },
+     {
+         "id": 21,
+         "title": "Slowbro",
+         "description": "Slowbro is part of a personal project started in August 2016 and finished in January 2019",
+         "price": 20,
+         "discountPercentage": 4.81,
+         "rating": 4.44,
+         "stock": 133,
+         "brand": "Logitech",
+         "category": "earth",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/019/662/997/large/pit-baldriz-chibi-slowbro-01.jpg?1564493287"
+         ]
+     },
+     {
+         "id": 22,
+         "title": "Magneton",
+         "description": "Magneton is part of a personal project started in August 2016 and finished in January 2019",
+         "price": 65.99,
+         "discountPercentage": 15.58,
+         "rating": 4.57,
+         "stock": 146,
+         "brand": "Razer",
+         "category": "dark",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/019/662/730/large/pit-baldriz-chibi-magneton-01.jpg?1564492515"
+         ]
+     },
+     {
+         "id": 23,
+         "title": "Sirfetch'd",
+         "description": "Sirfetch'd is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 289.99,
+         "discountPercentage": 8.04,
+         "rating": 4.85,
+         "stock": 26,
+         "brand": "Razer",
+         "category": "flying",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/023/406/094/large/pit-baldriz-pitbaldriz-sirfetchd.jpg?1579099426"
+         ]
+     },
+     {
+         "id": 24,
+         "title": "Dodrio",
+         "description": "PRO Wireless was designed to be the ultimate gaming mouse for esports professionals. Over a 2 year period, Logitech G collaborated with more than 50 professional players to find the perfect shape, weight and feel combined with our LIGHTSPEED wireless and HERO 25k sensor technologies. The result is a gaming mouse with unrivaled performance and precision, giving you the tools and confidence needed to win.",
+         "price": 159.99,
+         "discountPercentage": 16.8,
+         "rating": 4.24,
+         "stock": 0,
+         "brand": "Logitech",
+         "category": "leaf",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/019/662/539/large/pit-baldriz-dodrio-01.jpg?1564491885"
+         ]
+     },
+     {
+         "id": 25,
+         "title": "Dewgong",
+         "description": "Completed in 2020",
+         "price": 529.99,
+         "discountPercentage": 10,
+         "rating": 4.67,
+         "stock": 11,
+         "brand": "GMMK",
+         "category": "water",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/019/662/391/large/pit-baldriz-dewgong-01.jpg?1564491413"
+         ]
+     },
+     {
+         "id": 26,
+         "title": "Cloyster",
+         "description": "Cloyster is part of a personal project started in August 2016 and finished in January 2019",
+         "price": 329.99,
+         "discountPercentage": 17.86,
+         "rating": 3.95,
+         "stock": 131,
+         "brand": "AZIO",
+         "category": "dark",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/019/396/358/large/pit-baldriz-cloyster-01.jpg?1563299605"
+         ]
+     },
+     {
+         "id": 27,
+         "title": "Onix",
+         "description": "Stupid Onix",
+         "price": 423,
+         "discountPercentage": 12.3,
+         "rating": 5,
+         "stock": 0,
+         "brand": "doge",
+         "category": "earth",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/019/389/416/large/pit-baldriz-onyx-01.jpg?1563280008"
+         ]
+     },
+     {
+         "id": 28,
+         "title": "Electrode",
+         "description": "Stupid poke ball",
+         "price": 631,
+         "discountPercentage": 12.3,
+         "rating": 3.4,
+         "stock": 0,
+         "brand": "doge",
+         "category": "legend",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/019/389/209/large/pit-baldriz-electrode-01.jpg?1563279069"
+         ]
+     },
+     {
+         "id": 29,
+         "title": "Alolan Exeggutor",
+         "description": "Alolan Exeggutor is part of a personal project that started in August 2016 and finished in January 2019",
+         "price": 1234,
+         "discountPercentage": 12.3,
+         "rating": 5,
+         "stock": 0,
+         "brand": "LM10",
+         "category": "leaf",
+         "images": [
+             "https://cdna.artstation.com/p/assets/images/images/019/141/792/large/pit-baldriz-alolan-exeggutor-03.jpg?1562185985"
+         ]
+     },
+     {
+        "id": 30,
+        "title": "Blissey",
+        "description": "Being cute and can hatch the egg",
+        "price": 2344,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "LM10",
+        "category": "flying",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/856/105/large/pit-baldriz-blissey.jpg?1560978572"
+        ]
+    },
+    {
+         "id": 31,
+         "title": "Koffing",
+         "description": "stinky happy bomb",
+         "price": 9999,
+         "discountPercentage": 12.3,
+         "rating": 5,
+         "stock": 0,
+         "brand": "CR7",
+         "category": "dark",
+         "images": [
+             "https://cdnb.artstation.com/p/assets/images/images/019/141/169/large/pit-baldriz-koffing-01.jpg?1562183751"
+         ]
+    },
+    {
+        "id": 32,
+        "title": "Seadra",
+        "description": "SIUUUUUUUUUUUUUUUU",
+        "price": 9731,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "water",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/630/947/large/pit-baldriz-seadra-pitbladriz.jpg?1560125367"
+        ]
+    },
+    {
+        "id": 33,
+        "title": "Scyther",
+        "description": "cut leaf cut leaf cut everything",
+        "price":7235,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "flying",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/613/611/large/pit-baldriz-scyther-pitbaldriz.jpg?1560053558"
+        ]
+    },
+    {
+        "id": 34,
+        "title": "Magikarp",
+        "description": "weirdo crown fish",
+        "price": 773,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "water",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/018/611/304/large/pit-baldriz-magikarp-pitbaldriz.jpg?1560035021"
+        ]
+    },
+    {
+        "id": 35,
+        "title": "Aerodactyl",
+        "description": "GOARRRRRRRRRR",
+        "price": 471,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "dragon",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/608/813/large/pit-baldriz-aerodactyl-pitbaldriz.jpg?1560021942"
+        ]
+    },
+    {
+        "id": 36,
+        "title": "Moltres",
+        "description": "Completed in 2021",
+        "price": 5235,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "fire",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/606/485/large/pit-baldriz-moltres-pitbaldriz.jpg?1560012037"
+        ]
+    },
+    {
+        "id": 37,
+        "title": "Dragonair",
+        "description": "Love chu",
+        "price": 521153,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "water",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/606/293/large/pit-baldriz-dragonair-pitbaldriz.jpg?1560011525"
+        ]
+    },
+    {
+        "id": 38,
+        "title": "Mewtwo",
+        "description": "A creature in lab",
+        "price": 3,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "legend",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/018/606/082/large/pit-baldriz-mewtwo-pitbaldriz.jpg?1560010855"
+        ]
+    },
+    {
+        "id": 39,
+        "title": "Mew",
+        "description": "A nature creature can fight and teleport to another place",
+        "price": 723,
+        "discountPercentage": 12.3,
+        "rating": 5,
+        "stock": 0,
+        "brand": "CR7",
+        "category": "legend",
+        "images": [
+            "https://cdna.artstation.com/p/assets/images/images/018/606/002/large/pit-baldriz-mew-pitbaldriz.jpg?1560010598"
+        ]
+    },
+    {
+        "id": 40,
+        "title": "Sylveon",
+        "description": "Sylveon is part of a personal project started in August 2016 and finished in January 2019",
+        "price": 324,
+        "discountPercentage": 12.3,
+        "rating": 2,
+        "stock": 6,
+        "brand": "CR7",
+        "category": "legend",
+        "images": [
+            "https://cdnb.artstation.com/p/assets/images/images/018/609/141/large/pit-baldriz-sylveon-pitbaldriz.jpg?1560023573"
+        ]
+    }
+ ]
