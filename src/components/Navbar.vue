@@ -270,4 +270,7 @@ export default {
   max-width: 100%;
   height: auto;
 }
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.129); /* Lighten background on hover for visibility */
+}
 </style>
