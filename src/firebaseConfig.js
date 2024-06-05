@@ -18,7 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 //get authentication 
 const auth = getAuth(app)
-
+//get fiebase's NoSQL database
 const firestore = getFirestore(app);
 
 export { app, auth, firestore };

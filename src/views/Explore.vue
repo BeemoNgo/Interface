@@ -45,7 +45,7 @@
               <button v-if="item.stock > 0" type="button" class="btn" @click="addItem(item.id)">
                 Add<font-awesome-icon icon="fa-solid fa-cart-plus" />
               </button>
-              <button v-if="item.stock <= 0" type="button" disabled class="btn" @click="successOrder">
+              <button v-if="item.stock <= 0" type="button" disabled class="btn">
                 Coming Soon
               </button>
             </div>
@@ -181,7 +181,7 @@ export default {
       this.addItemToBasket(id);
     },
     async addItemToBasket(id) {
-      const user = await auth.currentUser;
+      const user = auth.currentUser;
       if (user) {
         let items = this.getBasketItems();
         for (var item of this.datas) {
